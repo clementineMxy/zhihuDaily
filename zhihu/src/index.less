@@ -1,0 +1,47 @@
+@import './assets/reset.min.css';
+
+html,
+body {
+    height: 100%;
+    background: #EEE;
+}
+
+// 设置root最小高度为100%，避免滑动时不显示下面内容
+#root {
+    min-height: 100%;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+/* Loading的样式 */
+/* 先在Elements-Styles中调整合适px，由于是iPhone6/7/8 屏幕宽375，设计稿是750，所以这个值要乘2*/
+.adm-dot-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.adm-button-loading-wrapper {
+    .adm-dot-loading {
+        position: static;
+        transform: none;
+        font-size: 30px;
+    }
+}
+
+/* Toast提示的样式 */
+.adm-toast-main {
+    max-width: 240px !important;
+    font-size: 28px !important;
+
+    .adm-toast-icon {
+        font-size: 40px !important;
+    }
+}
+
+/* Button按钮的样式 */
+.adm-button {
+    border-radius: 0 !important;
+}
